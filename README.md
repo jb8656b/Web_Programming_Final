@@ -7,3 +7,5 @@ This is my run tracker web app.  You can put in your distance and time and get y
 The site is also nearly entirely dynamically created from JavaScript.  There is code that is commented out that can be used to transfer each run to JSON format, if I decide to run this on a server and give people a personalized experience where their runs are saved.
 
 The CSS is fairly simple and some styling was done inside JavaScript.
+
+Here is the GitHub link: https://github.com/jb8656b/Web_Programming_Final.git
