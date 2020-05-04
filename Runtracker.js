@@ -42,7 +42,7 @@
     buttonsPlace.setAttribute("id", "buttonsPlace");
     buttonsPlace.style.display = "flex";
     buttonsPlace.style.flexDirection = "column";
-    buttonsPlace.innerHTML = "<h3>Add Row</h3>";
+    buttonsPlace.innerHTML = "<h3>Speed (min/mile)</h3>";
     buttonsPlace.classList.add("place");
 
     let titlesPlace = document.createElement("div");
@@ -73,10 +73,10 @@
     secondsPlace.innerHTML = ("<h3>Seconds</h3>");
     secondsPlace.classList.add("place");
 
-    let speedPlace = document.createElement("div");
-    speedPlace.setAttribute("id", "speedPlace");
-    speedPlace.style.display = "flex";
-    speedPlace.style.flexDirection = "column";
+    // let speedPlace = document.createElement("div");
+    // speedPlace.setAttribute("id", "speedPlace");
+    // speedPlace.style.display = "flex";
+    // speedPlace.style.flexDirection = "column";
 
 
     appSpace.appendChild(titlesPlace);
@@ -84,7 +84,7 @@
     appSpace.appendChild(minutesPlace);
     appSpace.appendChild(secondsPlace);
     appSpace.appendChild(buttonsPlace);
-    appSpace.appendChild(speedPlace);
+    // appSpace.appendChild(speedPlace);
     addRun();
   }
 
@@ -124,9 +124,10 @@
     buttonsPlace.appendChild(newButton);
   }
 
-  function removeRun(){
-    console.log("removeRun placeholder");
-  }
+//Feature scrapped
+  // function removeRun(){
+  //   console.log("removeRun placeholder");
+  // }
 
   function store(){
     console.log("store is running");
@@ -159,6 +160,7 @@
     newMinutes.innerHTML = minutes;
     newSeconds.innerHTML = seconds;
 
+
     let realMinutes = parseFloat(minutes) + parseFloat(seconds/60);
     let speed = realMinutes/distance;
     newSpeed.innerHTML = Number(Math.round(speed +'e2')+'e-2');
@@ -166,6 +168,27 @@
     console.log(realMinutes);
     console.log(speed);
 
+    //Code to turn runs into JSON data:
+    
+
+    // let newRun = {
+    //   Title: newTitle,
+    //   Distance: newDistance,
+    //   Minutes: newMinutes,
+    //   Seconds: newSeconds,
+    //   Speed: speed
+    // };
+    //
+    // let json = JSON.stringify(newRun);
+    //
+    // "use strict";
+    // const fs = require('fs');
+    // fs.writeFile("./object.json", JSON.stringify(json, null, 4), (err) =>{
+    //   if (err){
+    //     console.error(err);
+    //     return;
+    //   };
+    // });
 
 
     console.log(newTitle.value+newDistance.value+newMinutes+newSeconds);

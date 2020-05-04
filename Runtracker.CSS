@@ -4,20 +4,53 @@ h1{
   text-align: center;
 }
 #body{
-background-color: lightgray;
+  background-image: url("All-weather_running_track.jpg");
+  background-size: 1500px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
 }
-#speedPlace{
-  width: 40px;
+#titlesPlace{
+  min-width: 200px;
+  border-right: 0.5px solid gray;
+}
+#distancesPlace{
+  min-width: 157px;
+  border-right: 0.5px solid gray;
+  border-left: 0.5px solid gray;
+}
+#minutesPlace{
+  border-right: 0.5px solid gray;
+  border-left: 0.5px solid gray;
+}
+#secondsPlace{
+  border-right: 0.5px solid gray;
+  border-left: 0.5px solid gray;
+}
+#buttonsPlace{
+  border-left: 0.5px solid gray;
 }
 #application{
-  min-width: 160px;
+  width: 797px;
+  min-height: 500px;
+  background-color: rgba(209, 209, 209, 0.7);
+  /* align-items: center; */
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 10px;
 }
 .place{
-  border: 0.5px solid gray;
+  max-width: none;
 }
 h3{
   color: black;
   margin: 0px;
   font-family: sans-serif;
   font-family: Futura;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
