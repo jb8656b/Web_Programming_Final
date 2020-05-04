@@ -1,0 +1,23 @@
+h1{
+  font-family: sans-serif;
+  font-family: Futura;
+  text-align: center;
+}
+#body{
+background-color: lightgray;
+}
+#speedPlace{
+  width: 40px;
+}
+#application{
+  min-width: 160px;
+}
+.place{
+  border: 0.5px solid gray;
+}
+h3{
+  color: black;
+  margin: 0px;
+  font-family: sans-serif;
+  font-family: Futura;
+}
